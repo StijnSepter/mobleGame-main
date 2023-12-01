@@ -340,6 +340,7 @@ VirtualJoystick.prototype._buildJoystickBase	= function()
 /**
  * build the canvas for joystick stick
  */
+
 VirtualJoystick.prototype._buildJoystickStick	= function()
 {
 	var canvas	= document.createElement( 'canvas' );

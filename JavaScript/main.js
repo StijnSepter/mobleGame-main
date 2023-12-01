@@ -9,6 +9,9 @@ joystick.addEventListener("touchEnd", function () {
   console.log("up");
 });
 
+let x = 0;
+let y = 0;
+
 setInterval(function () {
   x=x+joystick.deltaX()/2;
   y=y+joystick.deltaY()/2;
@@ -16,25 +19,3 @@ setInterval(function () {
   //joystick.deltaY();
 }, (1 / 30) * 1000);
 
-let canvas = document.getElementById("canvas");
-let ctx = canvas.getContext("2d");
-let x = 150;
-let y = 150;
-
-function refresh() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.beginPath();
-  ctx.arc(x, y, 10, 0, 2 * Math.PI, false);
-  ctx.fillStyle = "red";
-  ctx.fill();
-  ctx.lineWidth = 5;
-  ctx.strokeStyle = "#003300";
-  ctx.stroke();
-  if (x<0) x=0;
-  if (x>300) x=300;
-  if (y<0) y=0;
-  if (y>300) y=300;
-
-  requestAnimationFrame(refresh);
-}
-refresh();
