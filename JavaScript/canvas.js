@@ -23,7 +23,6 @@ function resizeCanvas(canvas) {
         ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
     };
     setBackgroundImage(canvas)
-
 }
 
 function setBackgroundImage(canvas) {
@@ -51,5 +50,9 @@ function refresh() {
   requestAnimationFrame(refresh);
 }
 refresh();
+
+
+
+
 
 const myCanvas = initCanvas();

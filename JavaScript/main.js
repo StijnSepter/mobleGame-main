@@ -19,3 +19,7 @@ setInterval(function () {
   //joystick.deltaY();
 }, (1 / 30) * 1000);
 
+function gearSettings() {
+  document.getElementById("gear").style.display = "block";
+  
+}
