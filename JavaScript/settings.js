@@ -1,11 +1,17 @@
-gearJS = document.getElementById("gear");
-gearJS.addEventListener("click", gearSettings);
-const canvas = document.getElementById("canvas");
-const settings = document.getElementById("settings");
+const gearJS = document.getElementById("gear");
+const body = document.getElementById("body");
 
 function gearSettings() {
-    console.log("gearSettings");
-    canvas.style.display = "none";
-    settings.style.display = "block";
-    element.classList.toggle("mystyle");
+    let icons = document.getElementById("icons");
+    const c = document.getElementById("canvas");
+    if (c.style.display === "none") {
+        c.style.display = "block";
+        icons.style.display = "none";
+        body.style.backgroundColor = "white";
+
+    } else {
+        c.style.display = "none";
+        icons.style.display = "block";
+        body.style.backgroundColor = "grey";
+    }
 }
