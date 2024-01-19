@@ -61,11 +61,14 @@ body{
 }
 
 .iconsClass{
-    display: none;
     position: absolute;
     top: 48%;
     right: 50%;
     font-size: 52px;
     color: black;
     cursor: pointer;
+}
+
+#icons{
+    display: none;
 }
