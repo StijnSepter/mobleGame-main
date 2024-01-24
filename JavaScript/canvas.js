@@ -47,6 +47,9 @@ function refresh() {
   if (y<0) y=0;
   if (y>window.innerHeight) y=window.innerHeight;
 
+  //enemy
+  enemy();
+
   requestAnimationFrame(refresh);
 }
 refresh();
